@@ -1,0 +1,191 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="StyleSheet.css">
+<title>Write Review</title>
+</head>
+
+<header>
+	<h1>
+		<font face="Cambria">GAMESPEED</font>
+	</h1>
+</header>
+<body>
+	<nav>
+		<ul>
+			<li><a href="Home.html" class="home"><font face="Cambria">HOME</font></a></li>
+			<li><a href="Microsoft.html" class="microsoft"><font
+					face="Cambria">MICROSOFT</font></a></li>
+			<li><a href="Sony.html" class="sony"><font face="Cambria">SONY</font></a></li>
+			<li><a href="Nintendo.html" class="nintendo"><font
+					face="Cambria">NINTENDO</font></a></li>
+			<li><a href="Tablet.html" class="tablet"><font
+					face="Cambria">TABLETS</font></a></li>
+		</ul>
+		<a href="Index.html">SIGN OUT</a> <a href="vieworder">CART</a>
+	</nav>
+	<div id="container">
+
+		<aside class="vnav">
+			<ul>
+				<li>
+					<h3>Game Makers</h3>
+					<ul>
+						<li><a href="EA.html">Electronic Arts</a></li>
+						<li><a href="Activision.html">Activision</a></li>
+						<li><a href="TTI.html">Take-Two Interactive</a></li>
+					</ul>
+				</li>
+
+				<li>
+					<h3>Products</h3>
+					<ul>
+						<li><a href="X1.html">Xbox One</a></li>
+						<li><a href="X360.html">Xbox 360</a></li>
+						<li><a href="Ps3.html">PS3</a></li>
+						<li><a href="Ps4.html">PS4</a></li>
+						<li><a href="Wii.html">Wii</a></li>
+						<li><a href="WiiU.html">WiiU</a></li>
+					</ul>
+				</li>
+
+				<li>
+					<h3>Accessories</h3>
+					<ul>
+						<li><a href="Xc.html">Xbox</a></li>
+						<li><a href="Psc.html">Play Station</a></li>
+						<li><a href="Wiic.html">Wii</a></li>
+					</ul>
+				</li>
+
+				<li>
+					<h3>Data Analytics</h3>
+					<ul>
+						<li><a href="Analysis.html">Data Analytics</a></li>
+					</ul>
+				</li>
+
+			</ul>
+		</aside>
+
+		<section class="wrev">
+			<form action="writerev" method="post">
+				<table align="center">
+					<tr>
+						<td><label>Product Name</label></td>
+						<td>:</td>
+						<td><input type="text" name="pmodel"></td>
+					</tr>
+					<tr>
+						<td><label>Product Category</label></td>
+						<td>:</td>
+						<td><select name="pcategory">
+								<option value="Gaming Console">Gaming Console</option>
+								<option value="Game">Game</option>
+								<option value="Accessories">Accessories</option>
+								<option value="Tablets">Tablet</option>
+						</select></td>
+					</tr>
+					<tr>
+						<td><label>Product Price</label></td>
+						<td>:</td>
+						<td><input type="text" name="pprice"></td>
+					</tr>
+					<tr>
+						<td><label>Retailer Name</label></td>
+						<td>:</td>
+						<td><input type="text" name="retailer"></td>
+					</tr>
+					<tr>
+						<td><label>Retailer Zip</label></td>
+						<td>:</td>
+						<td><input type="text" name="rzip"></td>
+					</tr>
+					<tr>
+						<td><label>Retailer City</label></td>
+						<td>:</td>
+						<td><input type="text" name="rcity"></td>
+					</tr>
+					<tr>
+						<td><label>Retailer State</label></td>
+						<td>:</td>
+						<td><input type="text" name="rstate"></td>
+					</tr>
+					<tr>
+						<td><label>Product On Sale</label></td>
+						<td>:</td>
+						<td><input type="radio" name="pos" value="Yes">Yes <input
+							type="radio" name="pos" value="No">No</td>
+					</tr>
+					<tr>
+						<td><label>Manufacturer Name</label></td>
+						<td>:</td>
+						<td><select name="mname">
+								<option value="Microsoft">Microsoft</option>
+								<option value="Sony">Sony</option>
+								<option value="Nintendo">Nintendo</option>
+								<option value="Electronic Arts">Electronic Arts</option>
+								<option value="Activision">Activision</option>
+								<option value="Take-Two Interactive">Take-Two
+									Interactive</option>
+						</select></td>
+					</tr>
+					<tr>
+						<td><label>Manufacturer Rebate</label></td>
+						<td>:</td>
+						<td><input type="radio" name="mrebate" value="Yes">Yes
+							<input type="radio" name="mrebate" value="No">No</td>
+					</tr>
+					<tr>
+						<td><label>User Id</label></td>
+						<td>:</td>
+						<td><input type="text" name="userid"></td>
+					</tr>
+					<tr>
+						<td><label>Age</label></td>
+						<td>:</td>
+						<td><input type="text" name="uage"></td>
+					</tr>
+					<tr>
+						<td><label>Gender</label></td>
+						<td>:</td>
+						<td><input type="radio" name="gender" value="Male">Male
+							<input type="radio" name="gender" value="Female">Female</td>
+					</tr>
+					<tr>
+						<td><label>Occupation</label></td>
+						<td>:</td>
+						<td><input type="text" name="occu"></td>
+					</tr>
+					<tr>
+						<td><label>Rating</label></td>
+						<td>:</td>
+						<td><input type="radio" name="rating" value="1">1 <input
+							type="radio" name="rating" value="2">2 <input
+							type="radio" name="rating" value="3">3 <input
+							type="radio" name="rating" value="4">4 <input
+							type="radio" name="rating" value="5">5</td>
+					</tr>
+					<tr>
+						<td><label>Date</label></td>
+						<td>:</td>
+						<td><input type="date" placeholder="mm/dd/yyyy" name="rdate">
+						</td>
+					</tr>
+					<tr>
+						<td><label>Review Text</label></td>
+						<td>:</td>
+						<td><textarea rows="5" cols="50" name="reviewt"></textarea></td>
+					</tr>
+				</table>
+				<br>
+				<br>
+				<td><input type="submit" value="Submit Review"></td>
+			</form>
+		</section>
+
+
+		<div class="clear"></div>
+	</div>
+	<footer> Copyright © www.gamespeed.co.in </footer>
+</body>
+</html>
